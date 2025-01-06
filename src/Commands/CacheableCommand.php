@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Mimachh\Cacheable\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class CacheableCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'cacheable';
 
     public $description = 'My command';
 

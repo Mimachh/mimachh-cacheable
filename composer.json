@@ -1,24 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mimachh/cacheable",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "0.0.1",
+    "description": "This is my package cacheable",
     "keywords": [
-        ":vendor_name",
+        "Karl Muller",
         "laravel",
-        ":package_slug"
+        "cacheable"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mimachh/cacheable",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Karl Muller",
+            "email": "karl.mullr@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.4",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "^10.0||^11.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -30,18 +33,17 @@
         "pestphp/pest-plugin-laravel": "^3.0",
         "phpstan/extension-installer": "^1.3",
         "phpstan/phpstan-deprecation-rules": "^1.1",
-        "phpstan/phpstan-phpunit": "^1.3",
-        "spatie/laravel-ray": "^1.35"
+        "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Mimachh\\Cacheable\\": "src/",
+            "Mimachh\\Cacheable\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Mimachh\\Cacheable\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,13 +65,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Mimachh\\Cacheable\\CacheableServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "MethodCache": "Mimachh\\Cacheable\\Facades\\MethodCache"
             }
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
